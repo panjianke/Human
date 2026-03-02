@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-task-agent"
+version = "0.1.0"
+description = "基于 LangChain 的短任务/长任务企业级 AI Agent 示例"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "langchain>=0.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
